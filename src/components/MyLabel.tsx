@@ -1,8 +1,7 @@
 import { FC } from 'react'
 import './MyLabel.css'
-import { AllCaps } from '../stories/MyLabel.stories';
 
-interface Props {
+export interface Props {
     /**
      * Text to display
      */
