@@ -7,7 +7,7 @@
   "main": "dist/index.js",
   "homepage": "https://martadev.com",
   "repository": {
-    "url": "https://github.com/martaju29/my-storybook-react",
+    "url": "git@github.com:martaju29/my-storybook-react.git",
     "type": "git"
   },
   "release": {
