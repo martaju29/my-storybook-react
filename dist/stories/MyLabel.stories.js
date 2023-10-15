@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CustomBackgroundColor = exports.CustomColor = exports.Seconday = exports.AllCaps = exports.Basic = exports.meta = void 0;
+exports.CustomBackgroundColor = exports.CustomColor = exports.Seconday = exports.AllCaps = exports.Basic = void 0;
 var MyLabel_1 = require("../components/MyLabel");
-exports.meta = {
+var meta = {
     title: 'UI/labels/MyLabel',
     component: MyLabel_1.MyLabel,
     tags: ['autodocs'],
@@ -14,7 +14,7 @@ exports.meta = {
         fontColor: { control: 'color' }, //If the prop is a color, use the color control automatically, use it for other types as well
     },
 };
-exports.default = exports.meta;
+exports.default = meta;
 exports.Basic = {
     args: {
         label: 'Basic label',

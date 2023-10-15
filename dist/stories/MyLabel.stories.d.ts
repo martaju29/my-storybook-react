@@ -1,6 +1,6 @@
 /// <reference types="react" />
 import { StoryObj } from "@storybook/react";
-export declare const meta: {
+declare const meta: {
     title: string;
     component: import("react").FC<import("../components/MyLabel").Props>;
     tags: string[];

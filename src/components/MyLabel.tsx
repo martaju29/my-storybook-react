@@ -42,6 +42,6 @@ export const MyLabel: FC<Props> = ({
         backgroundColor = 'transparent'
     }) => {
   return (
-    <span className={`${size} ${color} label`} style={ { color: fontColor, backgroundColor } }>{ allCaps ? label.toUpperCase() : label }</span>
+    <span className={`${size} ${color} label`} style={ { color: fontColor, backgroundColor, padding: '20px' } }>{ allCaps ? label.toUpperCase() : label }</span>
   )
 }
