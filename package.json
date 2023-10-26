@@ -26,7 +26,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run clean && vite build && npm run copy-files",
+    "build": "npm run clean && tsc --emitDeclarationOnly && vite build && npm run copy-files",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",

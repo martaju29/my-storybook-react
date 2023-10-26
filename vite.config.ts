@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts', // Asegúrate de que este sea tu punto de entrada principal
-      name: 'MyLibrary', // Elige un nombre para tu biblioteca
+      name: 'mj-my-storybook-react-components', // Elige un nombre para tu biblioteca
       fileName: (format) => `index.${format}.js` // nombre de archivo de salida
     },
     rollupOptions: {
