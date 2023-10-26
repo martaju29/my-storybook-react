@@ -1,7 +1,7 @@
 {
   "name": "mj-my-storybook-react-components",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.1.1",
   "license": "MIT",
   "typings": "dist/index.d.ts",
   "main": "dist/index.js",
@@ -35,6 +35,8 @@
     "copy-files": "copyfiles -u 1 src/**/*.css dist/"
   },
   "dependencies": {
+    "@mantine/core": "^7.1.6",
+    "@mantine/hooks": "^7.1.6",
     "react": ">=18",
     "react-dom": ">=18"
   },
@@ -58,6 +60,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-storybook": "^0.6.15",
+    "postcss": "^8.4.31",
+    "postcss-preset-mantine": "^1.9.0",
+    "postcss-simple-vars": "^7.0.1",
     "rimraf": "^5.0.5",
     "semantic-release": "^22.0.5",
     "storybook": "^7.4.6",
@@ -67,11 +72,11 @@
   "readme": "ERROR: No README data found!",
   "_id": "my-storybook@0.0.0",
   "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog",
-      "@semantic-release/github",
-      "@semantic-release/npm",
-      "@semantic-release/git"
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
   ]
 }
