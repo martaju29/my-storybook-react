@@ -11,8 +11,16 @@ export default defineConfig({
       fileName: (format) => `mj-my-storybook-react-components.${format}.js` // nombre de archivo de salida
     },
     rollupOptions: {
+      // Este es opcional pero si quieres especificar externals puedes hacerlo aquí
       external: ['react', 'react-dom'],
-    },
+      output: {
+        // Asegúrate de que 'react' y 'react-dom' no se incluyan en el bundle final
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM'
+        }
+      }
+    }
   }
 
 })
