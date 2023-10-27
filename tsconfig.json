@@ -21,9 +21,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": false,
+    "typeRoots": ["./dist/index.d.ts", "node_modules/@types"],
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src", "./index.ts"],
 }

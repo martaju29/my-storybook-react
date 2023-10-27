@@ -3,15 +3,19 @@
   "private": false,
   "version": "1.1.1",
   "license": "MIT",
-  "main": "./dist/mj-my-storybook-react-components.umd.js",
-  "module": "./dist/mj-my-storybook-react-components.es.js",
-  "types": "./dist/index.d.ts",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/mj-my-storybook-react-components.es.js",
-      "require": "./dist/mj-my-storybook-react-components.umd.js"
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
     }
   },
+  "files": [
+    "/dist"
+  ],
   "homepage": "https://martadev.com",
   "repository": {
     "url": "git@github.com:martaju29/my-storybook-react.git",
@@ -22,10 +26,6 @@
       "main"
     ]
   },
-  "files": [
-    "dist",
-    "src"
-  ],
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"

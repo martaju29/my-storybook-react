@@ -5,17 +5,15 @@ import dts from 'vite-plugin-dts';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), 
-    dts({
-      insertTypesEntry: true,
-    }),
+  plugins: [
+    react(), 
+    dts(),
   ],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/components/index.ts'),
-      name: 'My Storybook React Components', // Elige un nombre para tu biblioteca
-      formats: ['es', 'umd'], // formatos de salida (se requiere al menos uno)
-      fileName: (format) => `mj-my-storybook-react-components.${format}.js` // nombre de archivo de salida
+      entry: path.resolve(__dirname, "index.ts"),
+      name: "ViteButton",
+      fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
