@@ -3,7 +3,7 @@
   "private": false,
   "version": "1.1.1",
   "license": "MIT",
-  "typings": "./dist/mj-my-storybook-react-components.d.ts",
+  "typings": "./dist/index.d.ts",
   "main": "./dist/mj-my-storybook-react-components.umd.js",
   "module": "./dist/mj-my-storybook-react-components.es.js",
   "exports": {
@@ -74,7 +74,8 @@
     "semantic-release": "^22.0.5",
     "storybook": "^7.4.6",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.6.2"
   },
   "readme": "ERROR: No README data found!",
   "_id": "my-storybook@0.0.0",
