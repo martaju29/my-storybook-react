@@ -26,6 +26,9 @@ module.exports = {
     typescript(),
     commonjs(),
     postcss({
+      config: {
+        path: './postcss.config.cjs'
+      },
       modules: true,
     }),
   ],
