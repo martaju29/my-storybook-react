@@ -1,2 +1,2 @@
-export * from './MyLabel'
-export * from './MyNumberInput'
+export { MyLabel } from './MyLabel'
+export { MyNumberInput } from './MyNumberInput'

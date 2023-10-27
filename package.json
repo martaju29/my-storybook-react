@@ -3,19 +3,12 @@
   "private": false,
   "version": "1.1.1",
   "license": "MIT",
-  "main": "dist/index.umd.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "files": [
-    "/dist"
+    "dist"
   ],
+  "types": "dist/index.d.ts",
   "homepage": "https://martadev.com",
   "repository": {
     "url": "git@github.com:martaju29/my-storybook-react.git",
@@ -33,7 +26,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run clean && tsc --emitDeclarationOnly && vite build && npm run copy-files",
+    "build": "npm run clean && rollup -c && npm run copy-files",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
@@ -43,11 +36,12 @@
   },
   "dependencies": {
     "@mantine/core": "^7.1.6",
-    "@mantine/hooks": "^7.1.6",
-    "react": ">=18",
-    "react-dom": ">=18"
+    "@mantine/hooks": "^7.1.6"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",
     "@storybook/addon-links": "^7.4.6",
@@ -61,6 +55,7 @@
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
+    "autoprefixer": "^10.4.16",
     "chromatic": "^7.3.0",
     "copyfiles": "^2.4.1",
     "eslint": "^8.45.0",
@@ -70,9 +65,15 @@
     "postcss": "^8.4.31",
     "postcss-preset-mantine": "^1.9.0",
     "postcss-simple-vars": "^7.0.1",
+    "react": ">=18",
+    "react-dom": ">=18",
     "rimraf": "^5.0.5",
+    "rollup": "^4.1.4",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
     "semantic-release": "^22.0.5",
     "storybook": "^7.4.6",
+    "tslib": "^2.6.2",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vite-plugin-dts": "^3.6.2"
