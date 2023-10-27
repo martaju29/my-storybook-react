@@ -25,7 +25,7 @@ module.exports = {
       config: {
         path: './postcss.config.cjs'
       },
-      extract: true,
+      inject: true,
       modules: true,
     }),
     peerDepsExternal(),
