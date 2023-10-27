@@ -3,9 +3,9 @@
   "private": false,
   "version": "1.1.1",
   "license": "MIT",
-  "typings": "./dist/index.d.ts",
   "main": "./dist/mj-my-storybook-react-components.umd.js",
   "module": "./dist/mj-my-storybook-react-components.es.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/mj-my-storybook-react-components.es.js",
