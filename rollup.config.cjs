@@ -21,15 +21,16 @@ module.exports = {
     }
   ],
   plugins: [
-    peerDepsExternal(),
-    resolve(),
-    typescript(),
-    commonjs(),
     postcss({
       config: {
         path: './postcss.config.cjs'
       },
+      extract: true,
       modules: true,
     }),
+    peerDepsExternal(),
+    resolve(),
+    typescript(),
+    commonjs(),
   ],
 };
