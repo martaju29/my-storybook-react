@@ -8,11 +8,18 @@ const commonjs = require('@rollup/plugin-commonjs');
 
 module.exports = {
   input: 'src/index.ts',
-  output: {
-    dir: 'dist',
-    format: 'cjs',
-    sourcemap: true,
-  },
+  output: [
+    {
+      file: 'dist/index.cjs.js',
+      format: 'cjs',
+      sourcemap: true,
+    },
+    {
+      file: 'dist/index.esm.js',
+      format: 'esm',
+      sourcemap: true,
+    }
+  ],
   plugins: [
     peerDepsExternal(),
     resolve(),
