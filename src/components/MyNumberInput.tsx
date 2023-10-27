@@ -18,9 +18,10 @@ export const MyNumberInput : FC<Props> = () => {
   return (
     <MantineProvider theme={theme}>
         <NumberInput
-        label="Input label"
-        description="Input description"
-        placeholder="Input placeholder"
+            label="Input label"
+            description="Input description"
+            placeholder="Input placeholder"
+            thousandSeparator=","
         />
     </MantineProvider>
   );
