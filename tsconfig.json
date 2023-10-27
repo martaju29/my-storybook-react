@@ -23,7 +23,6 @@
     "isolatedModules": true,
     "noEmit": false,
     "sourceMap": true,
-    "typeRoots": ["./dist/index.d.ts", "node_modules/@types"],
     "jsx": "react-jsx",
     "rootDir": "src"
   },
