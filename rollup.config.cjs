@@ -35,4 +35,5 @@ module.exports = {
     typescript(),
     commonjs(),
   ],
+  external: [/\.css$/]
 };
