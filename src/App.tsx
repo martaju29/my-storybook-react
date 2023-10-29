@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { MyNumberInput } from './index'
+import { MyLabel, MyNumberInput } from './index'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,6 +29,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+
+      <MyLabel label="Hello World" size="h1" allCaps={true} color="text-primary" fontColor="white" backgroundColor="blue" />
 
       <MyNumberInput />
     </>
