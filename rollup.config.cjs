@@ -13,11 +13,13 @@ module.exports = {
       file: 'dist/index.cjs.js',
       format: 'cjs',
       sourcemap: true,
+      banner: '\'use client\';\n\n',
     },
     {
       file: 'dist/index.esm.js',
       format: 'esm',
       sourcemap: true,
+      banner: '\'use client\';\n\n',
     }
   ],
   plugins: [
